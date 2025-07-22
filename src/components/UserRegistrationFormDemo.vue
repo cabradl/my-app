@@ -1,17 +1,8 @@
 <template>
   <div class="user-form-container">
-    <h1>User Registration Form (Local Storage Demo)</h1>
+    <h1>User Registration Form </h1>
     
-    <!-- Database Toggle -->
-    <div class="database-toggle">
-      <label>
-        <input type="checkbox" v-model="useFirebase" @change="switchDatabase" />
-        Use Firebase (requires configuration)
-      </label>
-      <p v-if="!useFirebase" class="info-text">
-        Currently using Local Storage for demo purposes. Data will persist in your browser.
-      </p>
-    </div>
+   
 
     <!-- Status Messages -->
     <div v-if="successMessage" class="success-message">
